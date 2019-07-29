@@ -13,7 +13,7 @@ def hello_world():
 def add():
     print("-------")
     print(request.headers)
-    # print(type(request.json))
+    print(type(request.json))
     print(request.json)
     result = request.json['a'] + request.json['b']
     return str(result)
